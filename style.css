@@ -1,0 +1,199 @@
+body {
+    font-family: 'JetBrains Mono',monospace;
+}
+.container
+{
+    width: 70%;
+   margin: 0 auto;
+}
+
+nav .container{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    height:70px;
+}
+nav{
+    background-color: #2b2b2b;
+}
+.nav-links{
+
+display: flex;
+justify-content: space-between;
+width:7%;
+
+}
+.nav-logo
+{
+   
+    font-weight: 600;
+}
+nav a{
+    color:white;
+    text-decoration: none;
+    margin-right: 40px;
+
+}
+.nav-links a
+{
+    transition: .5s all;
+
+    
+}
+.nav-links a:hover
+{
+   
+    transform: scale(1.1);
+}
+.landing-page{
+    width: 100vw;
+    height: calc(100vh - 70px);
+    background-image: url('label.jpg');
+    background-position: center;
+    background-size: cover;
+    
+     
+}
+.landing-page-shadow
+{
+    width:100%;
+    height:100%;
+    background-color: rgba(0,0,0, .4);
+    color: white;
+    
+}
+.landing-page-shadow .container
+{
+   
+    display: flex;
+    align-items:  center;
+    justify-content: center;
+    height: 100%;
+ 
+}
+.landing-page-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    color: white;
+    height: 20%;
+
+}
+.landing-page-text-forgotpassword{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    color: white;
+    height: 20%;
+
+}
+.landing-page-text-fp h1{
+  
+    margin-bottom: 10px;
+    font-size: 20px;
+  
+    
+
+}
+
+
+.emailtext{
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+.passwordtext{
+font-size:15px;
+}
+.landing-page-text form {
+  display: flex;
+    justify-content: space-between;
+
+}
+.landing-page-text h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.landing-page-text h2
+{
+    font-size:25px;
+    margin-bottom:20px;
+}
+.forgotyourpassword a{
+    color:white;
+    text-decoration: none;
+    font-size:12px;
+}
+.landing-page-text button , .landing-page-text-fp button
+{
+    margin-top: 15px;
+    margin-bottom: 5px;
+color: white;
+padding: 5px 10px;
+background: none;
+border: 2px solid white;
+border-radius: 13px;
+}
+.landing-page-text button:hover , .landing-page-text-fp button:hover,.registeroptions button:hover, .buttonrejestr:hover{
+   
+    background-color: white;
+    color: black;
+}
+.guziki{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.emailtext-fp{
+    text-decoration: none;
+}
+footer .container {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+    background-color: #2b2b2b;
+    color:white;
+
+}
+footer a {
+color:white;
+text-decoration: none;
+}
+.footer-contact{
+    margin-right: 10px;
+    color:white;
+    display: flex;
+    flex-direction: column;
+    
+}
+.registeroptions{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+}
+.registeroptions button{
+    margin-top: 15px;
+}
+.registertitle h1,h2{
+    font-size: 40px;
+    height: 70px;
+   
+}
+.registeroptions {
+    display:flex;
+}
+.buttonrejestr{
+    margin-top: 15px;
+    margin-bottom: 5px;
+color: white;
+padding: 5px 10px;
+background: none;
+border: 2px solid white;
+border-radius: 13px;
+}
