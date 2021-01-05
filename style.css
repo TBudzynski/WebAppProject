@@ -204,3 +204,48 @@ border-radius: 13px;
     justify-content: space-between;
     height: 70px;
 }
+
+
+
+.mainpage {
+    padding: 5% 0;
+    background-image: url('label.jpg');
+    color: white;
+    width: 100vw;
+    height: calc(100vh - 70px);
+}
+
+.mainpage h1
+{
+    margin-bottom: 50px;
+}
+
+.mainpage-list
+{
+    display :flex;
+    flex-wrap: wrap;
+}
+.mainpage-box 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    height: 250px;
+    background-color: teal;
+    margin-right: 5%;
+    margin-bottom: 5%;
+  
+}
+.mainpage-box h2{
+   transition: .5s all;
+    }
+.mainpage-box h2:hover{
+transform: scale(1.1);
+}
+.mainpage-box h3{
+    transition: .5s all;
+     }
+.mainpage-box h3:hover{
+ transform: scale(1.1);
+ }
