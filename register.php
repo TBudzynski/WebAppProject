@@ -10,10 +10,25 @@
     <title>Document</title>
 </head>
 <body>
+<nav>
+       <div class="container">
+        <a class="nav-logo"  href="index.php" > GymProgressApp</a>
+        <div class = "nav-links">
+        <a href="log.php" >Log in</a>
+        <a href="register.php"> Register</a>
+
+        </div>
+       </div> 
+    </nav>
+
     <section class ="landing-page">
         <div class="landing-page-shadow">
             <div class="container">
+           
                 <div class="landing-page-text-register">
+               
+               
+
                   <h1> Join us! </h1>
                   <h2> ... and be active! </h2>
                    </div>
@@ -31,13 +46,15 @@
                         username: <br /><input type="username" name="username"><br>
                         email adress: <br /><input type="email" name="email"><br>
                         password:<br /> <input type="password" name="password"><br>
-                        <div class="buttonrejestr">
-                        <input type="submit" value=" zaloz konto "> 
+                        <div class="buttonrejestr">                         
+                        <input type="submit" value="   Create an account!   "> 
                         </div>
                         </form>
+                      
                         
                         
             </div>
+            
         </div>
     </div>  
     </div>

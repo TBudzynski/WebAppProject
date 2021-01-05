@@ -24,8 +24,7 @@
         <div class="landing-page-shadow">
             <div class="container">
                 <div class="landing-page-text">
-                   <h1> Hello, we send you a sport greetings!</h1>
-                  
+                   <h1> Bad username od password! Try again!</h1>
                 
                     <form  action="log_auth.php" method="post">
                         <div class="logoptions">
