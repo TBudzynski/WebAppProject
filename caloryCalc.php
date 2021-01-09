@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@1,200&display=swap" rel="stylesheet">
+   
     <title>Document</title>
 </head>
 <body>
@@ -19,27 +20,43 @@
             </div>
        </div> 
     </nav>
+
     <section class ="landing-page">
         <div class="landing-page-shadow">
             <div class="container">
-                <div class="landing-page-text-fp">
-                    <h1> Please, write your email adress!</h1>
-                    <div class  ="emailtext-fp">
-                        <p >Email</p>
-
-                        <form action="">
-                            <div>
-                                <input type="email" name="exampleemail" />
-                            </div>
-                        </form>
-                        
-                        <a href="#" > <button > Send email</button> </a>
-                    </div>
+           
+                <div class="landing-page-text-register">
+                    <h1> Eat smart </h1>
+                    <h2> ... and look great! </h2>
                 </div>
-             </div>
+                <div class="registeroptions">
+                    <form  action="auth.php" method="post">
+                        Weight:<br /> <input type="number" name="weight" step="10"><br>
+                        Height:<br /><input type="number" name="height" step="10"><br>
+                       <br /> Choose your gender:<br>
+                        <input type="radio"  name="sex" value="male" >
+                        <label for="male">Male</label><br>
+                        <input type="radio" id="female" name="sex" value="female">
+                        <label for="female">Female</label><br>
+                        <input type="radio" id="other" name="sex" value="other">
+                        <label for="other">Other</label>
+                      <br />  <br /> Physical activity factor:<br /><input type="number" name="paFactor" step="0.1"><br><br> 
+                        <div class="buttoncalc">      <br>                   
+                        <input type="submit" value="   OK   "> 
+                        </div>
+                    </form>
+                      
+                        
+                        
+                </div>
+            
         </div>
-               
+    </div>  
+    </div>
     </section>
+       
+       
+       
         <footer>
             <div class="container">
                 <div>

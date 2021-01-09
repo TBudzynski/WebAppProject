@@ -26,39 +26,31 @@
         <div class="landing-page-shadow">
             <div class="container">
                 <div class="landing-page-text">
-                <h1 >A few information about us:</h1> 
-    <section class="otworcach" id="otworcach">
-        <div class="container">
-             
-                <div class="otworcach-list">
-           
-                    <div class="otworcach-box">
-                        <h2>Tomasz Andrzejewski</h2>
-                    </div>
-            
-                    <div class="otworcach-box">
-                    <br />  <h2><a href="tomekBinfo.php" >Tomasz Budzyński</a> </h2> <br>
-                    </div>
+
+                <div class="reftosocialmedia">
+                <div class="footer-social-icons">
+                    <h4 class="_14">Follow me:</h4>
+                        <ul class="social-icons">
+                            <li><a href="" class="social-icon"> <i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="" class="social-icon"> <i class="fa fa-github"></i></a></li>
+                        </ul>
+                </div>
+        
+            </div>
 
                 </div>
             </div>
-    </section>
-                </div>
-            </div>
         </div>
-    </section>
-  
+        </section>
+    
     <footer>
         <div class="container">
-            <div>
-                <a href="#"> Regulations </a>
-                <a href="www.google.com" class="fa fa-facebook"></a>
-                <a href="www.linkedin.com/in/tomasz-budzyński-3713261bb" class="fa fa-linkedin"></a>
-                <a href="#" class="fa fa-instagram"></a>
+            <div>  
+                <a href="#"> Regulamin </a>
             </div>
             <div class="footer-contact" id="kontakt">
-                <a href="tel:+47777888999">Call us</a>
-                <a href="mailto:toomoo199@wp.pl">Write us an email</a>
+                <a href="tel:+47777888999">Zadzwoń teraz na naszą infolinię</a>
+                <a href="mailto:toomoo199@wp.pl">Napisz do nas maila</a>
             </div>
         </div> 
     </footer>

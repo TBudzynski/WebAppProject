@@ -21,13 +21,14 @@ nav{
 
 display: flex;
 justify-content: space-between;
-width:10%;
+width:15%;
 
 }
 .nav-logo
 {
   
     font-weight: 600;
+    font-size: 40px;
 }
 nav a{
     color:white;
@@ -48,7 +49,7 @@ nav a{
 .landing-page{
     width: 100vw;
     height: calc(100vh - 70px);
-    background-image: url('label.jpg');
+    background-image: url('background.jpg.jpeg');
     background-position: center;
     background-size: cover;
     
@@ -121,7 +122,7 @@ font-size:15px;
     margin-bottom:20px;
 }
 .forgotyourpassword a{
-   
+   margin-top: 10px;
     color:white;
     text-decoration: none;
     font-size:12px;
@@ -142,13 +143,17 @@ border-radius: 13px;
     color: black;
 }
 .guziki{
+    margin-top: 50px;
+    margin-left:10px;
     display: flex;
     justify-content: space-between;
+    height:40px;
     
 }
 .emailtext-fp{
     text-decoration: none;
 }
+
 footer .container {
     width: 100%;
     margin: 0 auto;
@@ -158,6 +163,7 @@ footer .container {
     height: 70px;
     background-color: #2b2b2b;
     color:white;
+    
 
 }
 footer a {
@@ -188,14 +194,16 @@ text-decoration: none;
 }
 
 .buttonrejestr{
-    margin-top: 15px;
+    margin-top: 20px;
     margin-bottom: 5px;
 color: white;
+background-color: white;
 padding: 5px 10px;
 background: none;
 border: 2px solid white;
 border-radius: 13px;
 }
+
 
 .logoptions {
     display: flex;
@@ -217,7 +225,7 @@ border-radius: 13px;
 
 .mainpage h1
 {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 .mainpage-list
@@ -225,7 +233,7 @@ border-radius: 13px;
     display :flex;
     flex-wrap: wrap;
 }
-.mainpage-box 
+.mainpage-box
 {
     display: flex;
     justify-content: center;
@@ -235,17 +243,183 @@ border-radius: 13px;
     background-color: teal;
     margin-right: 5%;
     margin-bottom: 5%;
+    
   
+}
+.mainpage-box a,h2,h3,h4,h5,h6,h7 
+{
+    font-size: 40px;
+    color: white;
+    text-decoration: none;
+
 }
 .mainpage-box h2{
    transition: .5s all;
     }
-.mainpage-box h2:hover{
-transform: scale(1.1);
-}
-.mainpage-box h3{
+.mainpage-box h2:hover
+    {
+    transform: scale(1.1);
+    }
+.mainpage-box h3
+    {
     transition: .5s all;
+    }
+.mainpage-box h3:hover
+    {
+    transform: scale(1.1);
+    }
+.mainpage-box h4
+    {
+    transition: .5s all;
+    }
+.mainpage-box h4:hover
+    {
+    transform: scale(1.1);
+    }
+    .mainpage-box h5
+    {
+    transition: .5s all;
+    }
+.mainpage-box h5:hover
+    {
+    transform: scale(1.1);
+    }
+    .mainpage-box h6
+    {
+    transition: .5s all;
+    }
+.mainpage-box h6:hover
+    {
+    transform: scale(1.1);
+    }
+    .mainpage-box h7
+    {
+    transition: .5s all;
+  
+    }
+.mainpage-box h7:hover
+    {
+    transform: scale(1.1);
+    }
+
+
+    .otworcach {
+        padding: 5% 0;
+        color: white;
+    }
+    
+    .otworcach h1
+    {
+        margin-bottom: 50px;
+    }
+    
+    .otworcach-list
+    {
+        display :flex;
+        flex-wrap: wrap;
+    }
+    .otworcach-box 
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+     
+    
+       
+      
+      
+    }
+    .otworcach-box h2,h3{
+        
+       transition: .5s all;
+       font-size: 30px;
+       
+        }
+        
+            
+    .otworcach-box h2:hover{
+    transform: scale(1.1);
+    }
+    .otworcach-box h3{
+        transition: .5s all;
+         }
+     .otworcach-box h3:hover{
+     transform: scale(1.1);
      }
-.mainpage-box h3:hover{
- transform: scale(1.1);
- }
+    
+
+
+
+     a {
+        text-decoration: none;
+        color: white;
+    }
+    p > a:hover{
+        color: #d9d9d9;
+        text-decoration:  underline;
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        margin:  1% 0 1% 0;
+    }
+    ._12 {
+        font-size: 1.2em;
+    }
+    ._14 {
+        font-size: 2em;
+    }
+    ul {
+        padding:0;
+        list-style: none;
+    }
+    .footer-social-icons {
+        width: 350px;
+        display:block;
+        margin: 0 auto;
+       
+    }
+    .social-icon {
+        color: #fff;
+    }
+    ul.social-icons {
+        margin-top: 10px;
+    }
+    .social-icons li {
+        vertical-align: top;
+        display: inline;
+        height: 100px;
+    }
+    .social-icons a {
+        color: #fff;
+        text-decoration: none;
+    }
+  
+    .fa-linkedin {
+        padding:10px 14px;
+        -o-transition:.5s;
+        -ms-transition:.5s;
+        -moz-transition:.5s;
+        -webkit-transition:.5s;
+        transition: .5s;
+        background-color: #322f30;
+    }
+    .fa-linkedin:hover {
+        background-color: #0073a4;
+    }
+    .fa-github {
+        padding:10px 14px;
+        -o-transition:.5s;
+        -ms-transition:.5s;
+        -moz-transition:.5s;
+        -webkit-transition:.5s;
+        transition: .5s;
+        background-color: #322f30;
+    }
+    .fa-github:hover {
+        background-color: #5a32a3;
+    }

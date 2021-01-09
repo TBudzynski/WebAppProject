@@ -9,26 +9,42 @@
  <body>
 
 <?php
+/*
+   class Auth {
+$db= MysqliDb::getInstance();
+$db->where("username", $username);
+$db->orWhere("email",$email);
+$row = $db->getOne("users");
 
-    session_start();
-
-    if(isset($_POST['email']))
+if($row !== null)
+{
+    if($row != null)
     {
-        $everythingisokay=true;
+        if(strcasecmp($username, $row["username"]) === 0)
+        $err_message = "This username is already taken";
+    }
+    $err_message="This username or email is already taken";
+    return false;
+}
+*/
+   
+
+session_start();
+    if(isset($_POST['email'] )&& isset($_POST['password'])&& isset($_POST['nameu'])&& isset($_POST['surname'])&& isset($_POST['username'])&& isset($_POST['sex']))
+    {
+    $everythingisokay=true;
     $name = $_POST['nameu'];
     $surname = $_POST['surname'];
-    
-   // $dateofbirtch = $_POST["dateofbirtch"];
     $sex = $_POST['sex'];
     $email = $_POST['email'];
     $username = $_POST['username'];
-    $password = $_POST['password'];
+   // $password = $_POST['password'];
+    $password= password_hash($_POST['password'],PASSWORD_ARGON2ID);
 
-
-    if((strlen($username)<3)|| (strlen($username))>8)
+    if((strlen($username)<3)|| (strlen($username))>15)
     {
         $everythingisokay=false;
-        $_SESSION['e_nick']="Nick must be include from 3 to 8 chars";
+        $_SESSION['e_nick']="Nick must be include from 3 to 15 chars";
     }
 
 

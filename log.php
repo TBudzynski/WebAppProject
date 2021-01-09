@@ -9,17 +9,17 @@
     <title>Document</title>
 </head>
 <body>
-<nav>
-       <div class="container">
-         <a class="nav-logo"  href="index.php" > GymProgressApp</a>
-            <div class = "nav-links">
-               
-                <a href="log.php" >Log in</a>
-                <a href="register.php"> Register</a>
+    <nav>
+        <div class="container">
+            <a class="nav-logo"  href="index.php" >SportProgressApp</a>
+                <div class = "nav-links">
+                
+                    <a href="log.php" >Log in</a>
+                    <a href="register.php"> Register</a>
 
-            </div>
-       </div> 
-</nav>
+                </div>
+        </div> 
+    </nav>
     <section class ="landing-page">
         <div class="landing-page-shadow">
             <div class="container">
@@ -33,14 +33,12 @@
                         Password:<br /><input type="password" name="password"><br>  
                         </div>
                         <div class="guziki">
-                             <br/>  <button> Log in!</button> <br>
-                        </div>
-                      
-                          
+                        <input type="submit" value="Log in!"> 
+                        </div>    
                     </form>  
-                   <div><h3></h3></div>
+                  
                     <div class="forgotyourpassword">
-                           <a href="forgotpassword.php" >Forgot your password?</a>
+                        <br />  <a href="forgotpassword.php" >Forgot your password?</a> <br>
                     </div> 
                 </div>
                 

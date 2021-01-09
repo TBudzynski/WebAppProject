@@ -9,14 +9,14 @@
     <title>Document</title>
 </head>
 <body>
-<nav>
+    <nav>
        <div class="container">
-        <a class="nav-logo"  href="index.php" > GymProgressApp</a>
-        <div class = "nav-links">
-        <a href="log.php" >Log in</a>
-        <a href="register.php"> Register</a>
-
-        </div>
+            <a class="nav-logo"  href="index.php" > SportProgressApp</a>
+            <div class = "nav-links">
+                <a href="aboutus.php">About us</a>
+                <a href="log.php" >Log in</a>
+                <a href="register.php"> Register</a>
+            </div>
        </div> 
     </nav>
     <section class ="landing-page">
@@ -25,32 +25,25 @@
                 <div class="landing-page-text">
                     <h1> Hello, we send you a sport greetings!</h1>
                     <h2> The account has been created, please sign in:</h2>
-                   <div class="emailtext">
-                    <p >Email</p>
+                  
+                   
 
-                    <form action="">
-                        <div>
-                            <input type="email" name="exampleemail" />
-                        </div>
-                    </form>
-                </div>
-              
-                <div class="passwordtext">
                    
-                 <p>Password</p>
-                    <form action="">
-                        <div>
-                            <input type="password" name="examplepassword" />
+                    <form  action="log_auth.php" method="post">
+                        <div class="logoptions">
+                        Username:<br /> <input type="text" name="username"><br>
+                        Password:<br /><input type="password" name="password"><br>  
                         </div>
-                    </form>
-                </div>
-                <div class="guziki">
-                    <button> Log in!</button>
-                </div>
+                        <div class="guziki">
+                        <input type="submit" value="   Log in!   "> 
+                        </div>
+                       
+                    </form>  
+                   <div><h3></h3></div>
                     <div class="forgotyourpassword">
-                        <a href="forgotpassword.php" >Forgot your password?</a>
-                    </div>
-                   
+                         <br />  <a href="forgotpassword.php" >Forgot your password?</a> <br>
+                    </div> 
+                </div>
                 </div>
             </div>
         </div>

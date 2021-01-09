@@ -10,14 +10,14 @@
     <title>Document</title>
 </head>
 <body>
-<nav>
+    <nav>
        <div class="container">
-        <a class="nav-logo"  href="index.php" > GymProgressApp</a>
-        <div class = "nav-links">
-        <a href="log.php" >Log in</a>
-        <a href="register.php"> Register</a>
-
-        </div>
+            <a class="nav-logo"  href="index.php" > SportProgressApp</a>
+            <div class = "nav-links">
+                <a href="aboutus.php">About us</a>
+                <a href="log.php" >Log in</a>
+                <a href="register.php"> Register</a>
+            </div>
        </div> 
     </nav>
 
@@ -26,34 +26,35 @@
             <div class="container">
            
                 <div class="landing-page-text-register">
-               
-               
-
-                  <h1> Join us! </h1>
-                  <h2> ... and be active! </h2>
-                   </div>
-                 <div class="registeroptions">
+                    <h1> Join us! </h1>
+                    <h2> ... and be active! </h2>
+                </div>
+                <div class="registeroptions">
                     <form  action="auth.php" method="post">
                         Name:<br /> <input type="text" name="nameu"><br>
                         Surname:<br /><input type="text" name="surname"><br>
-                        
-                        
-                        Choose your sex:<br /> <select name="sex">
-                            <option value = "k"> woman</option>
-                            <option value = "m"> man</option>
-                            <option value = "o"> other</option>
-                        </select><br>
-                        username: <br /><input type="username" name="username"><br>
+                        <br /> Choose your gender:<br>
+                        <input type="radio"  name="sex" value="m" >
+                        <label for="male">Male</label><br>
+                        <input type="radio" id="female" name="sex" value="k">
+                        <label for="female">Female</label><br>
+                        <input type="radio" id="other" name="sex" value="o">
+                        <label for="other"><br\>Other<br></label>
+                        <br /> username: <br /><input type="username" name="username"><br> 
                         email adress: <br /><input type="email" name="email"><br>
                         password:<br /> <input type="password" name="password"><br>
                         <div class="buttonrejestr">                         
                         <input type="submit" value="   Create an account!   "> 
                         </div>
-                        </form>
+                       
+                    </form>
+                    <div class="buttonrejestihaveaccount">
+                    <a href="log.php"> <button>I have an account</button></a>
+                        </div>
                       
                         
                         
-            </div>
+                </div>
             
         </div>
     </div>  
