@@ -13,10 +13,9 @@
         <div class="container">
             <a class="nav-logo"  href="index.php" >SportProgressApp</a>
                 <div class = "nav-links">
-                
+                    <a href="aboutus.php">About us</a>
                     <a href="log.php" >Log in</a>
                     <a href="register.php"> Register</a>
-
                 </div>
         </div> 
     </nav>
@@ -25,8 +24,7 @@
             <div class="container">
                 <div class="landing-page-text">
                    <h1> Hello, we send you a sport greetings!</h1>
-                  
-                
+             
                     <form  action="log_auth.php" method="post">
                         <div class="logoptions">
                         Username:<br /> <input type="text" name="username"><br>
@@ -40,25 +38,21 @@
                     <div class="forgotyourpassword">
                         <br />  <a href="forgotpassword.php" >Forgot your password?</a> <br>
                     </div> 
-                </div>
-                
-                
-                   
+                </div>              
             </div>
         </div>
         
     </section>
-        <footer>
-            <div class="container">
-                <div>
-                    
-                    <a href="#"> Regulamin </a>
-                </div>
-                <div class="footer-contact" id="kontakt">
-                    <a href="tel:+47777888999">Zadzwoń teraz na naszą infolinię</a>
-                    <a href="mailto:kontakt@nazwafirmy.xyz">Napisz do nas maila</a>
-                </div>
-            </div> 
-        </footer>
+<footer>
+    <div class="container">
+        <div>         
+        <a href="#"> Regulamin </a>
+        </div>
+            <div class="footer-contact" id="kontakt">
+                <a href="tel:+47777888999">Zadzwoń teraz na naszą infolinię</a>
+                <a href="mailto:kontakt@nazwafirmy.xyz">Napisz do nas maila</a>
+            </div>
+    </div> 
+</footer>
 </body>
 </html>

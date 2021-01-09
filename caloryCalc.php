@@ -40,9 +40,17 @@
                         <label for="female">Female</label><br>
                         <input type="radio" id="other" name="sex" value="other">
                         <label for="other">Other</label>
-                      <br />  <br /> Physical activity factor:<br /><input type="number" name="paFactor" step="0.1"><br><br> 
-                        <div class="buttoncalc">      <br>                   
-                        <input type="submit" value="   OK   "> 
+                        <br /><br /> Physical activity factor:<br /><input type="number" name="paFactor" step="0.1"><br><br> 
+                       
+                        <div class="buttoncalc">         
+                            <br /> I would like to:<br>
+                            <input type="radio"  name="decision" value="reduce" >
+                            <label for="reduce">Reduce my weight</label><br>
+                            <input type="radio" id="hold" name="decision" value="hold">
+                            <label for="hold">Hold my weight </label><br>
+                            <input type="radio" id="gain" name="decision" value="gain">
+                            <label for="gain">Gain my weight</label>
+                            <br /> <br /> <input type="submit" value="OK"> <br><br>
                         </div>
                     </form>
                       
