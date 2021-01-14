@@ -40,7 +40,7 @@
                                 }
                                 return target;
                             }
-
+                       
                             document.write(new Array(
                             // Tu wpisz kolejne elementy:
 

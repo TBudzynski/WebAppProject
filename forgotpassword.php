@@ -27,13 +27,14 @@
                     <div class  ="emailtext-fp">
                         <p >Email</p>
 
-                        <form action="">
+                        <form action="sendemail.php" method="post">
                             <div>
                                 <input type="email" name="exampleemail" />
                             </div>
+                            <input type="submit" value="   Send email!   "> 
                         </form>
                         
-                        <a href="#" > <button > Send email</button> </a>
+                        
                     </div>
                 </div>
              </div>

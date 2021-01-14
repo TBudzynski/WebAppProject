@@ -14,9 +14,7 @@
        <div class="container">
             <a class="nav-logo"  href="index.php" > SportProgressApp</a>
             <div class = "nav-links">
-                <a href="aboutus.php">About us</a>
-                <a href="log.php" >Log in</a>
-                <a href="register.php"> Register</a>
+                <a href="logoutscreen.php"> Sign out</a>
             </div>
        </div> 
     </nav>
@@ -30,25 +28,26 @@
                     <h2> ... and look great! </h2>
                 </div>
                 <div class="registeroptions">
-                    <form  action="auth.php" method="post">
-                        Weight:<br /> <input type="number" name="weight" step="10"><br>
-                        Height:<br /><input type="number" name="height" step="10"><br>
-                       <br /> Choose your gender:<br>
-                        <input type="radio"  name="sex" value="male" >
+                    <form  action="Caloryauth.php" method="post">
+                        Weight:<br /> <input type="number" name="weight" ><br>
+                        Height:<br /><input type="number" name="height" ><br>
+                        Age:<br /><input type="number" name="age" step="1"><br>
+                        <br /> Choose your gender:<br>
+                        <input type="radio"  name="gender" value="m" >
                         <label for="male">Male</label><br>
-                        <input type="radio" id="female" name="sex" value="female">
+                        <input type="radio" id="female" name="gender" value="k">
                         <label for="female">Female</label><br>
-                        <input type="radio" id="other" name="sex" value="other">
-                        <label for="other">Other</label>
+                        <input type="radio" id="other" name="gender" value="o">
+                        <label for="other"><br\>Other<br></label>
                         <br /><br /> Physical activity factor:<br /><input type="number" name="paFactor" step="0.1"><br><br> 
                        
                         <div class="buttoncalc">         
                             <br /> I would like to:<br>
-                            <input type="radio"  name="decision" value="reduce" >
+                            <input type="radio"  name="decision" value="-300" >
                             <label for="reduce">Reduce my weight</label><br>
-                            <input type="radio" id="hold" name="decision" value="hold">
+                            <input type="radio" id="hold" name="decision" value="0">
                             <label for="hold">Hold my weight </label><br>
-                            <input type="radio" id="gain" name="decision" value="gain">
+                            <input type="radio" id="gain" name="decision" value="300">
                             <label for="gain">Gain my weight</label>
                             <br /> <br /> <input type="submit" value="OK"> <br><br>
                         </div>

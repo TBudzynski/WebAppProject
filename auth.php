@@ -41,7 +41,7 @@ session_start();
    // $password = $_POST['password'];
     $password= password_hash($_POST['password'],PASSWORD_ARGON2ID);
 
-    if((strlen($username)<3)|| (strlen($username))>15)
+    if((strlen($username)<3) || (strlen($username))>15)
     {
         $everythingisokay=false;
         $_SESSION['e_nick']="Nick must be include from 3 to 15 chars";

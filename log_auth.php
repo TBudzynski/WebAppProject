@@ -1,22 +1,45 @@
 <?php
 require_once "lib/MysqliDb.php";
 $con=new mysqli("localhost","root",null,"gymprogresionapp");
-$db=new MysqliDb("localhost","root",null,"gymprogresionapp");
 
 session_start();
-//$login - $db ->get(())
-//$password=$_GET['password'];
-/*$db->where("username", $username);
-$row = $db -> getOne(("usersdata"));
-if($row === null)
-{
-    $err_message = "invalid username";
-    return false;
-}*/
 
-if(password_verify($password,$row[password_hash($_POST['password'],PASSWORD_ARGON2ID)]));
+$username = $_POST['username'];
+$password = $_POST['password'];
+
+$logcon="SELECT * FROM  usersdata WHERE username = '$username' ";
+
+$username=htmlentities($username,ENT_QUOTES,"UTF-8");
+if($rezultat=@$con->query($logcon))
+
 {
+$ilu_userow = $rezultat->num_rows;
+if($ilu_userow>0){
+$wiersz=$rezultat->fetch_assoc();
+$_SESSION['username']=$wiersz['username'];
+
+    if(password_verify($password,$wiersz['password'])){
+        echo ("hasla sa ok");
+     
+     $rezultat->free_result();
     header('Location: PageAfterLogin.php');
-    echo "Wszystko ok";
+    }
+
+    else {
+$_SESSION['blad']='<span style = "color:red">Uncorrect username or password!</span>';
+  #      echo ("twoje haslo ktore wpisales to " .$password);
+       
+header('Location: log.php');
+    }
 }
+
+else if($ilu_userow=0){
+    $_SESSION['blad']='<span style = "color:red">Uncorrect username or password!</span>';
+  header('Location: log.php');
+   
+
+}
+}
+
+
 ?>

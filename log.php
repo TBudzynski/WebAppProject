@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -34,7 +37,20 @@
                         <input type="submit" value="Log in!"> 
                         </div>    
                     </form>  
+                  <?php
+                  if(isset($_SESSION['username']))
+                  {
+                  echo '<div class ="error">'.$_SESSION['blad'],'</div>';
+                  unset($_SESSION['username']);
+                  }
                   
+                  if(isset($_SESSION['password']))
+                  {
+                  echo '<div class ="error">'.$_SESSION['blad'],'</div>';
+                  unset($_SESSION['password']);
+                  }
+
+                  ?>
                     <div class="forgotyourpassword">
                         <br />  <a href="forgotpassword.php" >Forgot your password?</a> <br>
                     </div> 
