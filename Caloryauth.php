@@ -39,6 +39,7 @@ session_start();
     $paFactor = $_POST['paFactor'];
     $decision = $_POST['decision'];
     $age = $_POST['age'];
+    $username=$_SESSION['username'];
 
    
 if($sex = "m")
@@ -61,7 +62,7 @@ else if ($sex="o")
     {
         $con= new mysqli("localhost","root",null,"gymprogresionapp");
 
-        if($con->query("INSERT INTO `calorycalc` (`weight`,`height`,`PhysicalActiv`,`gender` ,`Decision`,`Age`,`KcalShouldUserEat`,) VALUES ('$weight','$height','$paFactor','$sex','$decision','$age','$Kcal','$gender)"))
+        if($con->query("INSERT INTO `calorycalc` (`weight`,`height`,`PhysicalActiv`,`gender` ,`Decision`,`Age`,`KcalShouldUserEat`,`username`) VALUES ('$weight','$height','$paFactor','$sex','$decision','$age','$Kcal','$username')"))
         {
             
            header('Location: PageAfterLogin.php');

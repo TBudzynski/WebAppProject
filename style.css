@@ -59,8 +59,8 @@ nav a{
 .landing-page-shadow
 {
     width:100%;
-    height:100%;
-    background-color: rgba(0,0,0, .4);
+    height:60%;
+    
     color: white;   
 }
 .landing-page-shadow .container
@@ -221,13 +221,13 @@ text-decoration: none;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 25%;
-    height: 250px;
-    background-color: teal;
+    width: 320px;
+    height: 200px;
+    background-color:#2b2b2b;
     margin-right: 5%;
     margin-bottom: 5%;
 }
-.mainpage-box a,h2,h3,h4,h5,h6,h7 
+.mainpage-box a,h2,h3 
 {
     font-size: 40px;
     color: white;
@@ -238,7 +238,8 @@ text-decoration: none;
     }
 .mainpage-box h2:hover
     {
-    transform: scale(1.1);
+    transform: scale(1.4);
+  
     }
 .mainpage-box h3
     {
@@ -246,41 +247,9 @@ text-decoration: none;
     }
 .mainpage-box h3:hover
     {
-    transform: scale(1.1);
+    transform: scale(1.4);
     }
-.mainpage-box h4
-    {
-    transition: .5s all;
-    }
-.mainpage-box h4:hover
-    {
-    transform: scale(1.1);
-    }
-    .mainpage-box h5
-    {
-    transition: .5s all;
-    }
-    .mainpage-box h5:hover
-    {
-    transform: scale(1.1);
-    }
-    .mainpage-box h6
-    {
-    transition: .5s all;
-    }
-    .mainpage-box h6:hover
-    {
-    transform: scale(1.1);
-    }
-    .mainpage-box h7
-    {
-    transition: .5s all;
-  
-    }
-    .mainpage-box h7:hover
-    {
-    transform: scale(1.1);
-    }
+
     .otworcach {
         padding: 5% 0;
         color: white;
@@ -386,4 +355,93 @@ text-decoration: none;
     }
     .fa-github:hover {
         background-color: #5a32a3;
+    }
+
+    .landing-page-mainpage-options li {
+        width: 220px;
+     }
+   ul{
+        padding-top: 10px; /* odsunięcie 0 */
+        margin-top: 0px; /* marginesy 0 */
+    }
+    /* style dla pierwszego potomka li znacznika ul znajdującego się wewnątrz znacznika nav */
+    ul > li{
+        
+        list-style-type: none; /* wyłączenie wyświetlania znaczników wypunktowania */
+        display: block; /* wyświetlanie jako element blokowy */
+        padding: 0; /* odsunięcie na zero */
+    }
+    /* style dla linku gdy kursor myszy znajdzie się nad nim - znacznik linku musi być pierwszym potomkiem znacznika li będącym pierwszym potomkiem znacznika ul znajdującego się wewnątrz znacznika nav */
+  ul > li > a:hover{
+        background: #2b2b2b; /* kolor tła */
+    }
+    /* style dla znacznika linku będącego pierwszym potomkiem znacznika li będącym pierwszym potomkiem znacznika ul znajdującego się wewnątrz znacznika nav */
+     ul > li > a{
+        
+       
+        width: 100px; /* szerokość */
+        text-align: left; /* wyrównanie */
+        display: inline-block; /* wyświetlanie jako element liniowy blokowy */
+        padding: 60px; /* odsunięcie z wszystkich stron na 10px */
+        text-decoration: none; /* wyłączenie domyślnej dekoracji tekstu */
+        font-weight: bold; /* pogrubienie tekstu */
+        text-shadow: 1px 1px 2px #000000; /* cień tekstu: odsunięcie na x, odsunięcie na y, promień rozmycia, kolor */
+        color: white; /* kolor czcionki */
+    }
+    /* style dla elementu ol będącego pierwszym potomkiem li będącego pierwszym potomkiem ul znajdującego się w nav */
+     ul > li > ol{
+         width: 40px;
+        z-index: 1000; /* określa kolejność wyświetlania elementów (im wyższa liczba tym bardziej na wierzchu będzie dany element, a ponieważ menu powinno raczej na wierzchu się wyświetlać, więc dana została duża wartość by ten warunek został spełniony */
+        list-style-type: none; /* wyłączenie wyświetlania numeracji */
+        padding: 0; /* wyzerowanie odsunięcia */
+        margin: 0; /* wyzerowanie marginesów */
+        display: none; /* wyłączenie wyświetlania elementu */
+        position:absolute; /* oderwanie elementu od reszty strony, by jego pojawienie nie wpływało na układ strony */
+        text-align: left; /* wyrównanie tekstu do lewej */
+    }
+    /* styl dla elementu ol będącego potomkiem li będącego potomkiem ul znajdującego się w nav, gdzie styl jest stosowany gdy kursor myszy znajdzie się nad elementem li */
+     ul > li:hover > ol{
+        display: inline-block; /* wyświetl jako obiekt blokowy liniowy */
+     
+    }
+    /* style dla li będącego pierwszym potomkiem ol będącego pierwszym potomkiem li, będącego pierwszym potomkiem ul znajdującego się w nav */
+    ul > li > ol > li{
+        border-bottom: 1px solid #2b2b2b; /* ramka u dołu: szerokość, styl linii (ciągły), kolor */
+    }
+    /* style dla znacznika linku a będącego potomikem li będącego pierwszym potomkiem ol będącego pierwszym potomkiem li, będącego pierwszym potomkiem ul znajdującego się w menu */
+    menu ul > li > ol > li a{
+        padding: 100px; /* odsunięcie na 10px */
+        text-decoration: none; /* wyłączenie dekoracji tekstu */
+        color: #2b2b2b; /* kolor tekstu */
+        display: block; /* wyświetlaj jako element blokowy */
+    }
+    /* style dla li gdy kursor znajdzie się nad nim, który jest pierwszym potomkiem ol, będący pierwszym potomkiem li, będący pierwszym potomkiem ul znajdującym się w nav */        
+     ul > li > ol > li:hover{
+        background: #2b2b2b; /* kolor tła */
+    }
+  .Discipline-text,.HistoryofDiscipline-text h1{
+     font-size: small; 
+     display: flex;
+     justify-content: space-between;
+     flex-direction: column;
+  }
+
+ 
+  .activityplaning-box{
+    width:300px;
+    height:100px;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    background-color:#2b2b2b;
+    
+  }
+
+  .activityplaning-box:hover{
+    background: #000000;
+  }
+   .otworcach-list
+    {
+        display :flex;
+        flex-wrap: wrap;
     }

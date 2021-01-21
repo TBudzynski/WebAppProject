@@ -9,43 +9,37 @@
  <body>
 
 <?php
-/*
-   class Auth {
-$db= MysqliDb::getInstance();
-$db->where("username", $username);
-$db->orWhere("email",$email);
-$row = $db->getOne("users");
-
-if($row !== null)
-{
-    if($row != null)
-    {
-        if(strcasecmp($username, $row["username"]) === 0)
-        $err_message = "This username is already taken";
-    }
-    $err_message="This username or email is already taken";
-    return false;
-}
-*/
-   
-
 session_start();
-    if(isset($_POST['email'] )&& isset($_POST['password'])&& isset($_POST['nameu'])&& isset($_POST['surname'])&& isset($_POST['username'])&& isset($_POST['sex']))
+
+    if(isset($_POST['email'] )&& isset($_POST['password'])&& isset($_POST['nameu'])&& isset($_POST['surname'])&& isset($_POST['username'])&& isset($_POST['gender']))
     {
     $everythingisokay=true;
     $name = $_POST['nameu'];
     $surname = $_POST['surname'];
-    $sex = $_POST['sex'];
+    $gender= $_POST['gender'];
     $email = $_POST['email'];
     $username = $_POST['username'];
    // $password = $_POST['password'];
     $password= password_hash($_POST['password'],PASSWORD_ARGON2ID);
+    $logcon="SELECT * FROM  usersdata WHERE username = '$username' ";
+  
+    if($username==$logcon)
+    {
+        $everythingisokay==false;
+        echo "Podany username juz istnieje";
+    }
+}
+    else if($ilu_userow=0)
+    {
+        $everythingisokay==true;
+    }
 
-    if((strlen($username)<3) || (strlen($username))>15)
+    if((strlen($username)<3) || (strlen($username))>20)
     {
         $everythingisokay=false;
         $_SESSION['e_nick']="Nick must be include from 3 to 15 chars";
     }
+   
 
 
 
@@ -53,7 +47,7 @@ session_start();
     {
         $con= new mysqli("localhost","root",null,"gymprogresionapp");
 
-        if($con->query("INSERT INTO `usersdata` (`name`,`surname`,`sex`,`email`,`username`,`password`) VALUES ('$name','$surname','$sex',' $email','$username','$password')"))
+        if($con->query("INSERT INTO `usersdata` (`name`,`surname`,`gender`,`email`,`username`,`password`) VALUES ('$name','$surname','$gender',' $email','$username','$password')"))
         {
             
            header('Location: logporej.php');
@@ -65,7 +59,7 @@ session_start();
         }
     
         } 
-    }
+   
     if(isset($_SESSION['e_nick']))
     {
         echo '<div class="error">'.$_SESSION['e_nick'].'</div>';

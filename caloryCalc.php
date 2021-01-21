@@ -34,11 +34,11 @@
                         Age:<br /><input type="number" name="age" step="1"><br>
                         <br /> Choose your gender:<br>
                         <input type="radio"  name="gender" value="m" >
-                        <label for="male">Male</label><br>
-                        <input type="radio" id="female" name="gender" value="k">
-                        <label for="female">Female</label><br>
-                        <input type="radio" id="other" name="gender" value="o">
-                        <label for="other"><br\>Other<br></label>
+                        <label for="m">Male</label><br>
+                        <input type="radio"  name="gender" value="k">
+                        <label for="f">Female</label><br>
+                        <input type="radio"  name="gender" value="o">
+                        <label for="o"><br\>Other<br></label>
                         <br /><br /> Physical activity factor:<br /><input type="number" name="paFactor" step="0.1"><br><br> 
                        
                         <div class="buttoncalc">         

@@ -34,11 +34,11 @@
                         Name:<br /> <input type="text" name="nameu"><br>
                         Surname:<br /><input type="text" name="surname"><br>
                         <br /> Choose your gender:<br>
-                        <input type="radio"  name="sex" value="m" >
+                        <input type="radio"  name="gender" value="m" >
                         <label for="male">Male</label><br>
-                        <input type="radio" id="female" name="sex" value="k">
+                        <input type="radio" id="female" name="gender" value="k">
                         <label for="female">Female</label><br>
-                        <input type="radio" id="other" name="sex" value="o">
+                        <input type="radio" id="other" name="gender" value="o">
                         <label for="other"><br\>Other<br></label>
                         <br /> username: <br /><input type="username" name="username"><br> 
                         email adress: <br /><input type="email" name="email"><br>

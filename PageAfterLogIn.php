@@ -17,6 +17,7 @@
             <div class = "nav-links">
         
                 <a href="log.php" >Premium</a>
+                <a href="#" >Settings</a>
                 <a href="logoutscreen.php"> Sign out</a>
 
             </div>
