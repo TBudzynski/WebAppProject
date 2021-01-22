@@ -32,13 +32,14 @@
                         Weight:<br /> <input type="number" name="weight" ><br>
                         Height:<br /><input type="number" name="height" ><br>
                         Age:<br /><input type="number" name="age" step="1"><br>
-                        <br /> Choose your gender:<br>
+                        
+                        <!-- <br /> Choose your gender:<br>
                         <input type="radio"  name="gender" value="m" >
                         <label for="m">Male</label><br>
                         <input type="radio"  name="gender" value="k">
                         <label for="f">Female</label><br>
                         <input type="radio"  name="gender" value="o">
-                        <label for="o"><br\>Other<br></label>
+                        <label for="o"><br\>Other<br></label> -->
                         <br /><br /> Physical activity factor:<br /><input type="number" name="paFactor" step="0.1"><br><br> 
                        
                         <div class="buttoncalc">         

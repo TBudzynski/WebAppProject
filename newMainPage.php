@@ -44,6 +44,8 @@ $username=$_SESSION['username'];
                 </ol> -->
                 
                 
+                
+                
                 </li><li><a href="PersonalRecord.php" >Personal records</a>
                     <!-- <ol>
                         <li><a href="#" > Cycling </a></li>
@@ -53,7 +55,7 @@ $username=$_SESSION['username'];
                         <li><a href="#" > Swimming </a></li>
                        
                     </ol> -->
-                </li><li><a href="PlaningActivityMenu.php" >Activity planning</a>
+                </li><li><a href="PlaningActivityMenu.php" >User Panel</a>
                <!-- <ol>
                 <li><a href="#" > Cycling </a></li>
                 <li><a href="#" > Walking </a></li>
@@ -62,7 +64,7 @@ $username=$_SESSION['username'];
                 <li><a href="#" > Swimming </a></li>
                </ol> -->
            <li><a href="caloryCalc.php" >Calory Calculator</a>  </li>
-                </li><li><a href="#" >Settings</a>
+                </li><li><a href="SettingsMenu.php" >Settings</a>
                 <!-- <ol>
                     <li><a href="#" > Change password </a></li>
                     <li><a href="#" > Delete account </a></li> 

@@ -19,9 +19,9 @@ $username=$_SESSION['username'];
 if(isset($_POST['Discipline'] ))
 { //$surname = $_POST['surname'];
   //  echo "cos tu sie dzieje";
-    $cycling = $_POST['Discipline'];
+    $sport = $_POST['Discipline'];
     $_SESSION['discipline']=
-    $logcon=("SELECT MAX(distance),Discipline,TrainingTime,DateTraining FROM sportactivity,usersdata WHERE sportactivity.username = '$username' and Discipline = '$cycling' and sportactivity.username=usersdata.username");
+    $logcon=("SELECT MAX(distance),Discipline,TrainingTime,DateTraining FROM sportactivity,usersdata WHERE sportactivity.username = '$username' and Discipline = '$sport' and sportactivity.username=usersdata.username");
   $wynik = $con->query($logcon);
   $ile_znalezionych = $wynik->num_rows;
  

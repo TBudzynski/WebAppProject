@@ -34,7 +34,10 @@
                             <br />  <h2><a href="PlaningActivity.php" >Planning</a> </h2> <br>
                             </div>
                             <div class="mainpage-box">
-                            <br />  <h2><a href="PlaningActivity.php" >Your Plain</a> </h2> <br>
+                            <br />  <h2><a href="yourplainquest.php" >Your Plain</a> </h2> <br>
+                            </div>
+                            <div class="mainpage-box">
+                            <br />  <h2><a href="Mydiet.php" >My diet</a> </h2> <br>
                             </div>
                     </div>
                 </section>

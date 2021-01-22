@@ -1,36 +1,5 @@
 <?php
 
-// //require_once "lib/MysqliDb.php";
-// $error_msg = "";
-// if (!isset($_COOKIE['username'])){
-// if(isset($_POST['submit'])){
-//   $con= mysqli_connect("localhost","root",null,"gymprogresionapp");
-//   $user_username = mysqli_real_escape_string($con,trim($_POST['username']));
-//   $user_password = mysqli_real_escape_string($con,trim($_POST['password']));
-//   //$password = $_POST['p;ssword'];
-// echo "2";
-//   if(!empty($user_username) && !empty($user_password)){
-//   $logcon="SELECT username    FROM  usersdata WHERE username = '$user_username' AND password = SHA('$user_password')";
-//   $data=mysqli_query($con,$logcon);
-//   //if(password_verify($password,$wiersz['password'])){
-//   if(mysqli_num_rows($data) == 1)
-//   {
-//     $row = mysqli_fetch_array($data);
-//    // setcookie('user_id',$row['user_id']);
-//     setcookie('username',$row['username']);
-//   //  $home_url='http://' . $_SERVER['HTTP_HOST'] . dirname($_SERVER['PHP_SELF']). '/index.php';
-//     header('Location: newMainPage.php');
-//   }
-//   else{
-//     $error_msg='wrong password';
-//   }
-// }
-// else {
-//   $error_msg = 'You must give name';
-// }
-// }
-// }
-
 
 $con=new mysqli("localhost","root",null,"gymprogresionapp");
 

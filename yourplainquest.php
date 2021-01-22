@@ -14,9 +14,9 @@
        <div class="container">
             <a class="nav-logo"  href="index.php" > SportProgressApp</a>
             <div class = "nav-links">
-                <a href ="PlainingActivity-show.php">Your plan</a>
-                <a href="newMainPage.php"> Home</a>
-                <a href="logout_auth.php" > Sign out</a>
+               
+                <a href="Sign on.php" >Log in</a>
+                
             </div>
        </div> 
     </nav>
@@ -27,9 +27,9 @@
         
               
                 <div class="planing-activity-show">
-                    <form  action="planing-activity-addDataBases.php" method="post">
-                        Date: <br /> <input type="datetime-local" name="TrainingDate"><br>
-                        <br /> Type of activity:<br>
+                    <form  action="PlainingActivity-show.php" method="post">
+                        Starting date: <br /> <input type="datetime-local" name="TrainingDate"><br>
+                        <!-- <br /> Type of activity:<br>
                         <input type="radio"  name="activity" value="Cycling" >
                         <label for="Cycling">Cycling</label><br>
                         
@@ -44,7 +44,7 @@
                         
                         <input type="radio"  name="activity" value="Running" >
                         <label for="Running">Running</label><br>
-        
+         -->
                         <div class="buttonactivity">                         
                         <input type="submit" value="   OK   "> 
                         </div>
