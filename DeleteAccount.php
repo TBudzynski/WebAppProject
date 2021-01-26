@@ -14,9 +14,10 @@ session_start();
 <body>
     <nav>
         <div class="container">
-            <a class="nav-logo"  href="index.php" >SportProgressApp</a>
+            <a class="nav-logo"  href="newMainPage.php" >SportProgressApp</a>
                 <div class = "nav-links">
                     <a href="aboutus.php">About us</a>
+                    <a href="logout_auth.php">Log out</a>
                    
                 </div>
         </div> 
@@ -30,8 +31,8 @@ session_start();
                     <form  action="DeleteAccountAuth.php" method="post">
                         <div class="logoptions">
                                 Password:<br /><input type="password" name="password"><br> 
-                                 <input type="checkbox"  name="Deletea" value="delete"> 
-                                <label for="Deletea">Are you sure?</label>
+                                 <input type="checkbox"  name="Delete" value="delete"> 
+                                <label for="Delete">Are you sure?</label>
   
                               <br/>  <input type="submit" value="Delete my account!"> <br>
                         </div>    

@@ -36,7 +36,7 @@ $TrainingDate=$_POST['TrainingDate'];
 <body>
     <nav>
         <div class="container">
-            <a class="nav-logo"  href="index.php" >SportProgressApp</a>
+            <a class="nav-logo"  href="newMainPage.php" >SportProgressApp</a>
                 <div class = "nav-links">
                 <a href ="PlaningActivity.php">Planning activity</a>
                 <a href="logout_auth.php">Sign out</a>

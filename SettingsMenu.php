@@ -33,7 +33,8 @@ $username=$_SESSION['username'];
         <div class="landing-page-mainpage-options">
             <ul>
                 
-                <li><a href="DeleteAccount.php" > DeleteAccount </a>
+                <li><a href="DeleteAccount.php" > Delete Account </a>
+                <li><a href="ChangePassword.php" > Change Password </a>
                 
             </div>
             </section>

@@ -12,7 +12,7 @@
 <body>
     <nav>
        <div class="container">
-            <a class="nav-logo"  href="index.php" > SportProgressApp</a>
+            <a class="nav-logo"  href="newMainPage.php" > SportProgressApp</a>
             <div class = "nav-links">
                 <a href="logoutscreen.php"> Sign out</a>
             </div>

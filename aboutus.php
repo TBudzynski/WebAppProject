@@ -14,11 +14,11 @@
 
     <nav>
        <div class="container">
-            <a class="nav-logo"  href="index.php" > SportProgressApp</a>
+            <a class="nav-logo"  href="newMainPage.php" > SportProgressApp</a>
             <div class = "nav-links">
                 <a href="aboutus.php">About us</a>
-                <a href="log.php" >Log in</a>
-                <a href="register.php"> Register</a>
+                <a href="logout_auth.php" >Log out</a>
+             
             </div>
        </div> 
     </nav>

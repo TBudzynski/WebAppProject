@@ -15,8 +15,7 @@
             <a class="nav-logo"  href="newMainPage.php" > SportProgressApp</a>
             <div class = "nav-links">
                
-                <a href="newMainPage.php" >Home</a>
-                <a href="logout_auth.php" >Sign out</a>
+                <a href="logout_auth.php" >Log out</a>
                 
             </div>
        </div> 
@@ -27,30 +26,30 @@
             <div class="container">
         
               
-                <div class="planing-activity">
-                    <form  action="personal-record-auth.php" method="post">
-                       
+                <div class="history-activity">
+                    <form  action="MyResults_auth.php" method="post">
+                        Starting date: <br /> <input type="date" name="startingDate"><br>
+                        Finish date: <br /> <input type="date" name="finishDate"><br>
                         <br /> Type of activity:<br>
-                        <input type="radio"  name="Discipline" value="Cycling" >
-                        <label  for="Cycling">Cycling</label><br>
+                        <input type="radio"  name="activity" value="Cycling" >
+                        <label for="Cycling">Cycling</label><br>
                         
-                        <input type="radio"  name="Discipline" value="Jogging" >
+                        <input type="radio"  name="activity" value="Jogging" >
                         <label for="Jogging">Jogging</label><br>
                         
-                        <input type="radio"  name="Discipline" value="Swimming" >
+                        <input type="radio"  name="activity" value="Swimming" >
                         <label for="Swimming">Swimming</label><br>
                         
-                        <input type="radio"  name="Discipline" value="Gym" >
+                        <input type="radio"  name="activity" value="Gym" >
                         <label for="Gym">Gym</label><br>
                         
-                      
-        
+                        
                         <div class="buttonactivity">                         
                         <input type="submit" value="   OK   "> 
                         </div>
                        
                     </form>
-                   
+    
                 </div>
             
         </div>

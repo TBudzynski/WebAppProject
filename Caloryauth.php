@@ -34,21 +34,27 @@ session_start();
  //$sex = $con->query($gendersearch) or die("Problemy z odczytem danych!"); 
  //$wiersz = $sex->fetch_assoc();
 $gender= $row['gender'];
- 
-  
-if($gender == " m ")
-{
 
+if($gender == "m")
+{
 $Kcal = (9.99 * $weight +6.25* $height - 4.92 * $age + 5)* $paFactor + $decision;
 }
-else if ($gender == " k ")
+else if ($gender == "k")
 {
 $Kcal = (9.99 * $weight +6.25* $height - 4.92 * $age -161)* $paFactor + $decision;
 }
-else if ($gender == " o ")
+else if ($gender == "o")
 {
     $Kcal = (9.99 * $weight +6.25* $height - 4.92 * $age -161)* $paFactor + $decision;
 }
+$whey=$weight*2.2;
+$fat=(1/3*$Kcal)/9;
+$carbohydrantes=($Kcal-($whey*4+ $fat*9))/4;
+
+$_SESSION['Kcal']=$Kcal;
+$_SESSION['whey']=$whey;
+$_SESSION['Fat']=$fat;
+$_SESSION['carbohydrantes']=$carbohydrantes;
 
 $loguser="SELECT  * FROM  calorycalc WHERE username = '$username' ";
 $result = mysqli_query($con, $loguser) or die("Problemy z odczytem danych!");
@@ -57,7 +63,7 @@ $ile = mysqli_num_rows($result);
 
 if($ile==0){
 
-        if($con->query("INSERT INTO `calorycalc` (`weight`,`height`,`PhysicalActiv`,`gender`,`Decision`,`Age`,`KcalShouldUserEat`,`username`) VALUES ('$weight','$height','$paFactor','$gender','$decision','$age','$Kcal','$username')"))
+        if($con->query("INSERT INTO `calorycalc` (`weight`,`height`,`PhysicalActiv`,`gender`,`Decision`,`Age`,`KcalShouldUserEat`,`username`,`whey`,`carbohydrantes`,`Fat`) VALUES ('$weight','$height','$paFactor','$gender','$decision','$age','$Kcal','$username','$whey','$carbohydrantes','$fat')"))
         {
             
            header('Location: newMainPage.php');
@@ -72,10 +78,10 @@ if($ile==0){
         else if('Ilosc_uzytkownikow'>0)
         {
             if($con->query("UPDATE `calorycalc` 
-                            SET `weight` = '$weight' ,`height` = '$height',`PhysicalActiv`='$paFactor',`gender`='$gender',`Decision`='$decision',`Age`='$age',`KcalShouldUserEat`='$Kcal'
-                            WHERE `username`='$username' "))
+                            SET `weight` = '$weight' ,`height` = '$height',`PhysicalActiv`='$paFactor',`gender`='$gender',`Decision`='$decision',`Age`='$age',`KcalShouldUserEat`='$Kcal',`whey`='$whey',`carbohydrantes`=$carbohydrantes,`Fat`=$fat
+                            WHERE `username`='$username' "))                                                                                                     
             {
-                header('Location: newMainPage.php');
+                header('Location: Mydiet.php');
             }
             else
                 {

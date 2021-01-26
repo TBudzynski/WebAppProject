@@ -14,28 +14,33 @@
 
     <nav>
        <div class="container">
-            <a class="nav-logo"  href="index.php" > SportProgressApp</a>
+            <a class="nav-logo"  href="newMainPage.php" > SportProgressApp</a>
             <div class = "nav-links">
                 <a href="aboutus.php">About us</a>
-                <a href="log.php" >Log in</a>
-                <a href="register.php"> Register</a>
+                <a href="logout_auth.php" >Log out</a>
+                
             </div>
        </div> 
     </nav>
     <section class ="landing-page">
         <div class="landing-page-shadow">
             <div class="container">
-                <div class="landing-page-text">
+                
 
                 <div class="reftosocialmedia">
                 <div class="footer-social-icons">
                     <h4 class="_14">Follow me:</h4>
                         <ul class="social-icons">
-                            <li><a href="" class="social-icon"> <i class="fa fa-linkedin"></i></a></li>
+                            
                             <li><a href="" class="social-icon"> <i class="fa fa-github"></i></a></li>
-                        </ul>
-                </div>
+                            
+                            
+                            <li><a href="https://github.com/TBudzynski/WebAppProject" class="social-iconlin"> <i class="fa fa-linkedin"></i></a></li>
         
+                        
+                        
+                        </ul>
+                       
             </div>
 
                 </div>

@@ -29,7 +29,7 @@
 
                         <form action="sendemail.php" method="post">
                             <div>
-                                <input type="email" name="exampleemail" />
+                                <input type="email" name="email" />
                             </div>
                             <input type="submit" value="   Send email!   "> 
                         </form>

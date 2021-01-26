@@ -12,10 +12,10 @@
 <body>
     <nav>
        <div class="container">
-            <a class="nav-logo"  href="index.php" > SportProgressApp</a>
+            <a class="nav-logo"  href="newMainPage.php" > SportProgressApp</a>
             <div class = "nav-links">
                
-                <a href="Sign on.php" >Log in</a>
+                <a href="logout_auth.php" >Log out</a>
                 
             </div>
        </div> 

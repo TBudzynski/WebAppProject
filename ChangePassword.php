@@ -9,16 +9,16 @@ session_start();
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@1,200&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <title>SportProgressApp</title>
 </head>
 <body>
     <nav>
         <div class="container">
-            <a class="nav-logo"  href="index.php" >SportProgressApp</a>
+            <a class="nav-logo"  href="newMainPage.php" >SportProgressApp</a>
                 <div class = "nav-links">
                     <a href="aboutus.php">About us</a>
-                    <a href="log.php" >Log in</a>
-                    <a href="register.php"> Register</a>
+                    <a href="logout_auth.php" >Log out</a>
+                   
                 </div>
         </div> 
     </nav>
@@ -26,30 +26,26 @@ session_start();
         <div class="landing-page-shadow">
             <div class="container">
                 <div class="landing-page-text">
-                   <h1> Hello, we send you a sport greetings!</h1>
+                   
              
-                    <form  action="log_auth.php" method="post">
+                    <form  action="ChangePassword_auth.php" method="post">
                         <div class="logoptions">
-                        Username:<br /> <input type="text" name="username"><br>
-                        Password:<br /><input type="password" name="password"><br>  
+                        Actually password:<br /> <input type="password" name="password"><br>
+                        New password:<br /><input type="password" name="passwordnew"><br>  
+                        New password:<br /><input type="password" name="passwordnew2"><br>  
                         </div>
                         <div class="guziki">
-                        <input type="submit" value="Log in!"> 
-                        </div>    
-                    </form>  
-                  <?php
-                  
-                  
-                  if(isset($_SESSION['password']))
+                      <br />  <input type="submit" value="Change password!">  <br>
+                        </div>
+                        <?php 
+                        if(isset($_SESSION['password']))
                   {
                   echo '<div class ="error">'.$_SESSION['blad'],'</div>';
                   unset($_SESSION['password']);
-                  }
-
-                  ?>
-                    <div class="forgotyourpassword">
-                        <br />  <a href="forgotpassword.php" >Forgot your password?</a> <br>
-                    </div> 
+                  }   ?> 
+                    </form>  
+               
+                    
                 </div>              
             </div>
         </div>

@@ -14,7 +14,7 @@
     <nav>
        
         <div class = "container">   
-            <a class="nav-logo" href="index.html" >GymProgressApp</a>
+            <a class="nav-logo" href="newMainPage.php" >SportProgressApp</a>
             <div class= "nav-links">
                
             </div> 
@@ -36,9 +36,7 @@
                             <div class="mainpage-box">
                             <br />  <h2><a href="yourplainquest.php" >Your Plain</a> </h2> <br>
                             </div>
-                            <div class="mainpage-box">
-                            <br />  <h2><a href="Mydiet.php" >My diet</a> </h2> <br>
-                            </div>
+                           
                     </div>
                 </section>
             </div>

@@ -11,7 +11,7 @@
 <body>
     <nav>
         <div class="container">
-            <a class="nav-logo"  href="index.php" > GymProgressApp</a>
+            <a class="nav-logo"  href="index.php" > SportProgressApp</a>
                 <div class = "nav-links">
                 
                     <a href="log.php" >Log in</a>
